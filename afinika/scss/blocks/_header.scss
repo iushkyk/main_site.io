@@ -1,0 +1,49 @@
+.header {
+    height: 90px;
+
+    &__menu{
+        display: flex;
+    }
+    
+    .menu{
+        &__close{
+            display: none;
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+    }
+
+    &__logo {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 20px;
+    }
+
+    .nav {
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        
+        &__item a {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0 25px;
+        }
+
+        &__item a:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+}
+

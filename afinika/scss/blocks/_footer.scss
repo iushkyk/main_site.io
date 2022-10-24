@@ -1,0 +1,225 @@
+.footer{
+    padding: 100px 0 38px 0;
+    background: #214E41;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+    }
+
+    .logo{
+        margin-right: 35px;
+    }
+    &__logo{
+        font-weight: 700;
+        font-size: 36px;
+        color: #FFFFFF;
+    }
+    &__ul{
+        list-style-type: none;
+        .tel{
+            margin-top: 10px;
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 0.02px;
+            text-align: center;
+        }
+
+        .socials{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    }
+    &__item{
+        width: 187px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .item{
+            &__title{
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 24px;
+                letter-spacing: 0.02px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .mr{
+        margin-right: 16px;
+    }
+
+    &__ul{
+        list-style-type: none;
+        a{
+            font-weight: 400;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+    }
+    &__li{
+        margin-bottom: 15px;
+        &:nth-child(1){
+            margin-top: 15px;
+        }
+    }
+
+    .form{
+        width: 355px;
+    }
+
+    &__title{
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 0.02px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__descr{
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.02px;
+        color: #FFFFFF;
+        margin-top: 20px;
+    }
+
+    &__form{
+        width: 355px;
+        height: 52px;
+        display: flex;
+        margin-top: 15px;
+        input{
+            width: 301px;
+            height: 52px;
+            border: 1px solid #FFFFFF;
+            border-radius: 0px;
+            background: none;
+            padding: 0 21px;
+            outline: none; 
+            color: #fff;
+            &::placeholder{
+                color: #fff;
+            }
+        }
+        .btn{
+            background: #FFFFFF;
+            border-radius: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .divider{
+        width: 100%;
+        border-color: #fff;
+        margin-top: 65px;
+    }
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+        p{
+            color: #fff;
+            span{
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 1022px){
+
+    .footer{
+        &__item.form{
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    
+    .footer{
+        &__wrapper{
+            flex-direction: column-reverse;
+            gap: 40px;
+        }
+        &__item.logo{
+            margin-right: 0;
+            margin: 0 auto;
+        }
+        &__logo{
+            text-align: center;
+        }
+        &__item.mr{
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        &__li {
+            text-align: center;
+            letter-spacing: 0.15rem;
+        }
+        &__item{
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .item{
+            &__title{
+                text-align: center;
+                letter-spacing: 0.2rem;
+            }
+        }
+        .form{
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        &__title{
+            text-align: center;
+            letter-spacing: 0.2rem;
+        }
+        &__descr{
+            text-align: center;
+        }
+        &__wrap{
+            flex-direction: column;
+            p{
+                margin: 0 auto;
+                &:nth-child(2){
+                    margin-top: 20px;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: 400px) {
+    
+    .footer{
+        &__item.form{
+            width: 300px;
+            form{
+                max-width: 240px;
+                margin: 0 auto;
+                margin-top: 15px;
+                input {
+                    width: 212.5px;
+                }
+            }
+        }
+
+        &__wrap {
+            text-align: center;
+        }
+    }
+
+}
